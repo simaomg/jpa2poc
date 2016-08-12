@@ -11,15 +11,11 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
-import jpa2poc.test.InheritanceTest;
-
 public abstract class BaseTest {
 	
 private static EntityManagerFactory entityManagerFactory;
 	
 	protected EntityManager entityManager;
-	
-	protected static final Logger LOGGER = LogManager.getLogger(InheritanceTest.class); 
 	
 	@BeforeClass
 	public static void beforeClass() {

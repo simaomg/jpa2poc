@@ -3,6 +3,8 @@ package jpa2poc.test;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 import jpa2poc.domain.employees.Employee;
@@ -10,6 +12,8 @@ import jpa2poc.domain.employees.Phone;
 import jpa2poc.test.arquitetura.BaseTest;
 
 public class UnidirectionalOneToManyTest extends BaseTest {
+	
+	private static final Logger LOGGER = LogManager.getLogger(UnidirectionalOneToManyTest.class);
 
 	@Test
 	public void test() {
